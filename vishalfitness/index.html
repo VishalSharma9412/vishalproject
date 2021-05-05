@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <title>Vishal Fitness World</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css">
+
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        height: 1000px;
+        background: url("IMG/gym4.jpg");
+        color: white;
+        font-family: 'Play', sans-serif;
+        ;
+    }
+
+    .left {
+
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        /*left me shift karne ke lia*/
+        left: 4px;
+        top: -13px;
+    }
+
+
+    .mid {
+        /* border: 2px solid rgb(0, 255, 42); */
+        display: block;
+        /*Taki centre me show ho eslia alway follow 3 main conditions display width margin*/
+        width: 51%;
+        margin: 30px auto;
+    }
+
+    .right {
+        /* border: 2px solid rgb(251, 255, 0); */
+        display: inline-block;
+        position: absolute;
+        /*right me shift karne ke lia*/
+        right: 20px;
+        top: 43px;
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        /*esse jo navbar ke elements top to bottom show ho rahe the aan left to right show honge*/
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 13px;
+        font-size: 22px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+
+        text-decoration: underline;
+        /* jispe bhi hum cursor lekar jaae woh underline ho jaae*/
+        color: grey;
+    }
+
+
+    .left img {
+        width: 131px;
+        height: 119px;
+    }
+
+
+    .left div {
+        text-align: center;
+        /*ese logo ke neeche jo vishal fitness likha hai woh beeche me aa jaaega*/
+        
+    font-size: 19px;
+    line-height: 2px;
+    }
+
+
+    .btn {
+        margin: 0px 9px;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 12px;
+        cursor: pointer;
+        color: white;
+        background-color: black;
+        font-family: 'Play', sans-serif;
+        /*buttons me jaruur alag se font karna hotaa hai*/
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .container {
+      
+        border: 2px solid white;
+    color: white;
+    margin: 97px 128px;
+    padding: 15px 53px;
+    width: 398px;
+    border-radius: 19px;
+    font-size: 80%;
+    text-align: center;
+
+    }
+
+    .form-group input{
+
+        text-align: center;
+    display: block;
+    width: 349px;
+    padding: 3px;
+    border: 2px solid black;
+    margin: 3px auto;
+    font-size: 14px;
+    border-radius: 15px;
+    font-family: 'Play', sans-serif;
+    }
+
+
+    .container button{                                         /*taki sare buttons target naa ho sirf container ke under wala submit button he target ho*/
+        display: block;
+        width: 76%;
+        margin: 16px auto;
+
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- for the logo on the top left side-->
+            <img src="IMG/logo.png" alt="">
+            <div>Vishal Fitness</div>
+        </div>
+
+        <div class="mid">
+            <!-- for the navigation bar-->
+            <ul class="navbar">
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">About Us</a> </li>
+                <li> <a href="#">Fitness Calculator</a> </li>
+                <li> <a href="#">Contact Us</a> </li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <!-- for the buttons-->
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+    </header>
+
+    <div class="container">                           <!--YAha eslua taki hum ek discount form esme bana sakhe-->
+       <h1>Join the best gym of Gurgaon now</h1>
+       <form action="noaction.php"></form>                 <!--as yaha humne abhi backend nahi banaya hai, eska matlab hota hai sara data jo hum form me fill karenge woh backend me PHP me jaaega-->
+       <div class="form-group">
+           <input type="text" name= "" placeholder="Enter Your Name">
+       </div>
+       <div class="form-group">
+           <input type="text" name= "" placeholder="Enter Your Age">
+       </div>
+       <div class="form-group">
+           <input type="text" name= "" placeholder="Enter Your gender">
+       </div>
+       <div class="form-group">
+           <input type="text" name= "" placeholder="Enter Your Locality">
+       </div>
+       <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>
