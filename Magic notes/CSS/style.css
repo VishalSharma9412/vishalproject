@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+
+body{
+    background-color: rgb(185 221 241);
+    font-family: 'Gochi Hand', cursive;
+    font-weight: 100px;
+    border-radius: 23px;
+
+
+}
+
+#addTxt{
+    background-color: #343a40;
+    color: white;
+}
+#addTitle{
+    background-color: #343a40;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 38px;
+}
+
+.btn-primary {
+    color: rgb(0, 0, 0);
+    background-color: #20d8df;
+    border-color: #007bff;
+    border-radius: 14px;
+    border: 2px solid blue;
+}
+
+.form-control {
+    border-radius: 15px;
+}
+
+.card-body {
+    
+    background-color: #d6f1f3;
+}
+
+.btn-outline-success {
+    color: #04ecf7;
+    border-color: #8beff5;
+}
